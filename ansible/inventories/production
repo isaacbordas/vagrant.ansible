@@ -1,0 +1,18 @@
+[webservers]
+34.241.68.5 ansible_ssh_private_key_file=/ansible/files/CentOS65.pem ansible_user=root
+
+[databases]
+34.241.68.5 ansible_ssh_private_key_file=/ansible/files/CentOS65.pem ansible_user=root
+
+[infraestructure:children]
+webservers
+databases
+
+[webservers:vars]
+host_name=frontend
+
+[databases:vars]
+host_name=database
+
+[infraestructure:vars]
+time_zone=Europe/Madrid
