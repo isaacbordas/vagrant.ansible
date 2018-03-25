@@ -20,8 +20,8 @@ fi
 # Install Ansible Galaxy modules
 # To review in furure: http://docs.ansible.com/ansible/galaxy.html#id12
 echo "-> Installing Ansibe Galaxy Modules"
-roles_list[0]='geerlingguy.apache'
-roles_list[1]='geerlingguy.mysql'
+roles_list[0]='geerlingguy.apache,2.1.1'
+roles_list[1]='geerlingguy.mysql,2.8.2'
 
 for role_and_version in "${roles_list[@]}"
 do
