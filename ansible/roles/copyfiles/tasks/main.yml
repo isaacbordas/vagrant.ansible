@@ -1,0 +1,4 @@
+- name: Copy first_file.txt to /tmp
+  copy: src=files/first_file.txt dest=/tmp/first_file.txt
+- name: Copy second_file.txt to /tmp
+  copy: src=files/second_file.txt dest=/tmp/second_file.txt
